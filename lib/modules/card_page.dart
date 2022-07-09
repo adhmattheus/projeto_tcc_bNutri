@@ -1,8 +1,8 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
-class Card extends StatelessWidget {
-  const Card({Key? key}) : super(key: key);
-
+class CardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,12 +30,14 @@ class Card extends StatelessWidget {
             ),
           ),
           Container(
+            height: 92,
+            width: 92,
             margin: EdgeInsets.symmetric(vertical: 15.0),
             alignment: FractionalOffset.centerLeft,
-            child: Image(
-              image: AssetImage("assets/imgs/earth.png"),
-              height: 92,
-              width: 92,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                  image: AssetImage("assets/imgs/baby.jpg"), fit: BoxFit.fill),
             ),
           ),
         ],
