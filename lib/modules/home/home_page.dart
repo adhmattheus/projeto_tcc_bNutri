@@ -1,4 +1,5 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace
+import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,10 +13,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('B Nutri'),
-
-      ),
       body: Stack(
         fit: StackFit.loose,
         children: [
@@ -26,20 +23,6 @@ class _HomePageState extends State<HomePage> {
               image: DecorationImage(
                   image: const AssetImage('assets/imgs/home.png'),
                   fit: BoxFit.cover),
-            ),
-            child: GridView.count(
-              crossAxisCount: 2,
-              children: List.generate(
-                10,
-                (index) {
-                  return Center(
-                    child: Text(
-                      'Item $index',
-                      style: Theme.of(context).textTheme.headline5,
-                    ),
-                  );
-                },
-              ),
             ),
           ),
           Container(
@@ -59,7 +42,22 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.red, borderRadius: BorderRadius.circular(10)),
               ),
             ),
-          )
+          ),
+          Expanded(
+            child: GridView.count(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              crossAxisCount: 2,
+              childAspectRatio: .85,
+              crossAxisSpacing: 20,
+              mainAxisSpacing: 20,
+              children: <Widget>[
+                Option(
+                  nomeOption: "opção 1 ",
+                  imgOption: ('assets/imgs/baby.jpg'),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: Container(

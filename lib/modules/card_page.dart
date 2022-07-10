@@ -17,7 +17,7 @@ class CardPage extends StatelessWidget {
             height: 124,
             margin: EdgeInsets.only(left: 46),
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Color.fromARGB(110, 33, 149, 243),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(5),
               boxShadow: <BoxShadow>[
