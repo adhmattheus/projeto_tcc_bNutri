@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:b_nutri/modules/card_page.dart';
+import 'package:b_nutri/modules/info/info_page.dart';
 import 'package:flutter/material.dart';
 
 class ListPage extends StatelessWidget {
@@ -24,12 +25,18 @@ class ListPage extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration  : const BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
         ),
         child: ListView(children: [
-          CardPage(),
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => InfoPage()));
+            },
+            child: CardPage(),
+          ),
           CardPage(),
           CardPage(),
           CardPage(),

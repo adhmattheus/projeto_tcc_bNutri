@@ -2,6 +2,7 @@
 
 import 'package:b_nutri/modules/card_page.dart';
 import 'package:b_nutri/modules/home/home_page.dart';
+import 'package:b_nutri/modules/info/info_page.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
 import 'package:flutter/material.dart';
 

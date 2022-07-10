@@ -1,5 +1,6 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace
 import 'package:b_nutri/modules/home/optionmenu.dart';
+import 'package:b_nutri/modules/list/list_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(25.0),
               child: Container(
                 child: ListTile(
                   title: Text.rich(
@@ -58,10 +59,16 @@ class _HomePageState extends State<HomePage> {
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
                 children: <Widget>[
-                  Option(
-                    nomeOption: "opção 1 ",
-                    imgOption: ('assets/imgs/earth.png'),
-                    press: () {},
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => ListPage()));
+                    },
+                    child: Option(
+                      nomeOption: "opção 1 ",
+                      imgOption: ('assets/imgs/earth.png'),
+                      press: () {},
+                    ),
                   ),
                   Option(
                     nomeOption: "opção 2 ",
@@ -94,53 +101,22 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(
-        height: 60,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.food_bank,
-                  color: Colors.lightBlue,
-                )),
-            Container(
-              width: 50,
-              height: 50,
-              decoration: BoxDecoration(
-                  color: Colors.lightBlue,
-                  borderRadius: BorderRadius.circular(5)),
-              child: Icon(
-                Icons.home,
-              ),
-            ),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.photo_library,
-                  color: Colors.lightBlue,
-                )),
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.food_bank),
+            label: 'Receitas',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.photo_library),
+            label: 'Galeria',
+          ),
+        ],
       ),
     );
   }
 }
-
-
-// Expanded(
-//             child: GridView.count(
-//               padding: EdgeInsets.symmetric(horizontal: 20),
-//               crossAxisCount: 2,
-//               childAspectRatio: .85,
-//               crossAxisSpacing: 20,
-//               mainAxisSpacing: 20,
-//               children: <Widget>[
-//                 Option(
-//                   nomeOption: "opção 1 ",
-//                   imgOption: ('assets/imgs/baby.jpg'),
-//                 ),
-//               ],
-//             ),
-//           ),

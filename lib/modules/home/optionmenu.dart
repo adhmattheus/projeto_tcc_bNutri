@@ -5,13 +5,17 @@ class Option extends StatelessWidget {
   final String imgOption;
   final Function press;
 
-  const Option({Key? key, required this.nomeOption, required this.imgOption, required this.press})
+  const Option(
+      {Key? key,
+      required this.nomeOption,
+      required this.imgOption,
+      required this.press})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-       borderRadius: BorderRadius.circular(13),
+      borderRadius: BorderRadius.circular(13),
       child: Container(
         // padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
@@ -28,21 +32,18 @@ class Option extends StatelessWidget {
         ),
         child: Material(
           color: Colors.transparent,
-          child: InkWell(
-            onTap: () {},
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Column(
-                children: <Widget>[
-                  Spacer(),
-                  Image.asset(imgOption),
-                  Spacer(),
-                  Text(
-                    nomeOption,
-                    textAlign: TextAlign.center,
-                  )
-                ],
-              ),
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              children: <Widget>[
+                Spacer(),
+                Image.asset(imgOption),
+                Spacer(),
+                Text(
+                  nomeOption,
+                  textAlign: TextAlign.center,
+                )
+              ],
             ),
           ),
         ),
