@@ -1,6 +1,8 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace
+import 'package:b_nutri/modules/galeria/galeria.dart';
 import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
+import 'package:b_nutri/modules/receitas/receitas.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -100,22 +102,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.food_bank),
-            label: 'Receitas',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.photo_library),
-            label: 'Galeria',
-          ),
-        ],
       ),
     );
   }
