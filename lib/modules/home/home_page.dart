@@ -36,14 +36,16 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   subtitle: Text(
-                    "Vamos alimentar seu filho de maneira saudável!",
+                    "Vamos alimentar seu filho(a) de maneira saudável!",
                   ),
                   trailing: Container(
                     height: 48,
                     width: 48,
                     decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(10)),
+                        image: DecorationImage(
+                            image: AssetImage('assets/imgs/baby.jpg'),
+                            fit: BoxFit.cover),
+                        borderRadius: BorderRadius.circular(30)),
                   ),
                 ),
               ),
@@ -82,13 +84,8 @@ class _HomePageState extends State<HomePage> {
                     press: () {},
                   ),
                   Option(
-                    nomeOption: "opção 5 ",
+                    nomeOption: "opção 6 ",
                     imgOption: ('assets/imgs/mars.png'),
-                    press: () {},
-                  ),
-                  Option(
-                    nomeOption: "opção 5 ",
-                    imgOption: ('assets/imgs/earth.png'),
                     press: () {},
                   ),
                 ],
