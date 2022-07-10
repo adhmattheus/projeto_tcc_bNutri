@@ -13,52 +13,89 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        fit: StackFit.loose,
-        children: [
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: const AssetImage('assets/imgs/home.png'),
-                  fit: BoxFit.cover),
-            ),
-          ),
-          Container(
-            child: ListTile(
-              title: Text.rich(
-                TextSpan(text: "Olá, ", children: [
-                  TextSpan(text: " mamãe Maria"),
-                ]),
-              ),
-              subtitle: Text(
-                "Vamos alimentar seu filho de maneira saudável!",
-              ),
-              trailing: Container(
-                height: 48,
-                width: 48,
-                decoration: BoxDecoration(
-                    color: Colors.red, borderRadius: BorderRadius.circular(10)),
-              ),
-            ),
-          ),
-          Expanded(
-            child: GridView.count(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              crossAxisCount: 2,
-              childAspectRatio: .85,
-              crossAxisSpacing: 20,
-              mainAxisSpacing: 20,
-              children: <Widget>[
-                Option(
-                  nomeOption: "opção 1 ",
-                  imgOption: ('assets/imgs/baby.jpg'),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: const AssetImage('assets/imgs/home.png'),
+              fit: BoxFit.cover),
+        ),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                child: ListTile(
+                  title: Text.rich(
+                    TextSpan(
+                      text: "Olá, ",
+                      children: [
+                        TextSpan(text: " mamãe Maria"),
+                      ],
+                    ),
+                  ),
+                  subtitle: Text(
+                    "Vamos alimentar seu filho de maneira saudável!",
+                  ),
+                  trailing: Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10)),
+                  ),
                 ),
-              ],
+              ),
             ),
-          ),
-        ],
+            Expanded(
+              child: GridView.count(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                crossAxisCount: 2,
+                childAspectRatio: .85,
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 20,
+                children: <Widget>[
+                  Option(
+                    nomeOption: "opção 1 ",
+                    imgOption: ('assets/imgs/earth.png'),
+                    press: () {},
+                  ),
+                  Option(
+                    nomeOption: "opção 2 ",
+                    imgOption: ('assets/imgs/baby.jpg'),
+                    press: () {},
+                  ),
+                  Option(
+                    nomeOption: "opção 3 ",
+                    imgOption: ('assets/imgs/mars.png'),
+                    press: () {},
+                  ),
+                  Option(
+                    nomeOption: "opção 4 ",
+                    imgOption: ('assets/imgs/mercury.png'),
+                    press: () {},
+                  ),
+                  Option(
+                    nomeOption: "opção 5 ",
+                    imgOption: ('assets/imgs/moon.png'),
+                    press: () {},
+                  ),
+                  Option(
+                    nomeOption: "opção 5 ",
+                    imgOption: ('assets/imgs/mars.png'),
+                    press: () {},
+                  ),
+                  Option(
+                    nomeOption: "opção 5 ",
+                    imgOption: ('assets/imgs/earth.png'),
+                    press: () {},
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: Container(
         height: 60,
@@ -93,3 +130,20 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+// Expanded(
+//             child: GridView.count(
+//               padding: EdgeInsets.symmetric(horizontal: 20),
+//               crossAxisCount: 2,
+//               childAspectRatio: .85,
+//               crossAxisSpacing: 20,
+//               mainAxisSpacing: 20,
+//               children: <Widget>[
+//                 Option(
+//                   nomeOption: "opção 1 ",
+//                   imgOption: ('assets/imgs/baby.jpg'),
+//                 ),
+//               ],
+//             ),
+//           ),

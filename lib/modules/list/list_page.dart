@@ -24,10 +24,9 @@ class ListPage extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: const BoxDecoration(
+        decoration  : const BoxDecoration(
           image: DecorationImage(
-              image: const AssetImage('assets/imgs/home.png'),
-              fit: BoxFit.cover),
+              image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
         ),
         child: ListView(children: [
           CardPage(),
