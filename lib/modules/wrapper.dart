@@ -1,6 +1,7 @@
 import 'package:b_nutri/modules/galeria/galeria.dart';
 import 'package:b_nutri/modules/home/home_page.dart';
 import 'package:b_nutri/modules/receitas/receitas.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class Wrapper extends StatefulWidget {
@@ -27,23 +28,18 @@ class _WrapperState extends State<Wrapper> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _children[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
+      extendBody: true,
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        height: 48,
         onTap: onTabTapped,
-        currentIndex: _currentIndex,
+        index: _currentIndex,
         items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.food_bank),
-            label: 'Receitas',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.photo_library),
-            label: 'Galeria',
-          )
+          Icon(Icons.food_bank),
+          Icon(Icons.home),
+          Icon(Icons.photo_library),
         ],
+       
       ),
     );
   }
