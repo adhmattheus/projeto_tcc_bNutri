@@ -1,11 +1,8 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace
-import 'package:b_nutri/modules/galeria/galeria.dart';
-import 'package:b_nutri/modules/home/optionmenu.dart';
-import 'package:b_nutri/modules/list/card_list.dart';
-import 'package:b_nutri/modules/list/list_page.dart';
-import 'package:b_nutri/modules/receitas/receitas.dart';
-import 'package:flutter/material.dart';
 
+import 'package:b_nutri/modules/home/optionmenu.dart';
+import 'package:b_nutri/modules/list/list_page.dart';
+import 'package:flutter/material.dart';
 import '../listas/leiteList.dart';
 import '../listas/passosList.dart';
 
@@ -59,53 +56,34 @@ class _HomePageState extends State<HomePage> {
             ),
             Expanded(
               child: GridView.count(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: 25),
                 crossAxisCount: 2,
                 childAspectRatio: .85,
                 crossAxisSpacing: 20,
-                mainAxisSpacing: 20,
+                mainAxisSpacing: 10,
                 children: <Widget>[
                   Option(
-                    nomeOption: "opção 1 ",
+                    nomeOption: 'Princípios',
                     imgOption: ('assets/imgs/earth.png'),
                     press: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  ListPage(listcard: passoslist, titulo:'12 passos')));
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ListPage(
+                                listcard: passoslist, titulo: 'Princípios')),
+                      );
                     },
                   ),
                   Option(
-                    nomeOption: "opção 2 ",
-                    imgOption: ('assets/imgs/baby.jpg'),
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/moon.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>
-                                  ListPage(listcard: leitelist, titulo:'Leite')));
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
                     },
-                  ),
-                  Option(
-                    nomeOption: "opção 3 ",
-                    imgOption: ('assets/imgs/mars.png'),
-                    press: () {},
-                  ),
-                  Option(
-                    nomeOption: "opção 4 ",
-                    imgOption: ('assets/imgs/mercury.png'),
-                    press: () {},
-                  ),
-                  Option(
-                    nomeOption: "opção 5 ",
-                    imgOption: ('assets/imgs/moon.png'),
-                    press: () {},
-                  ),
-                  Option(
-                    nomeOption: "opção 6 ",
-                    imgOption: ('assets/imgs/mars.png'),
-                    press: () {},
                   ),
                 ],
               ),

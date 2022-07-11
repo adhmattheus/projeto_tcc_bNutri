@@ -7,15 +7,16 @@ import 'package:flutter/material.dart';
 class Wrapper extends StatefulWidget {
   Wrapper();
 
+  @override
   _WrapperState createState() => _WrapperState();
 }
 
 class _WrapperState extends State<Wrapper> {
   int _currentIndex = 1;
   final List<Widget> _children = [
-    Receitas(),
-    HomePage(),
-    Galeria(),
+    const Receitas(),
+    const HomePage(),
+    const Galeria(),
   ];
 
   void onTabTapped(int index) {
