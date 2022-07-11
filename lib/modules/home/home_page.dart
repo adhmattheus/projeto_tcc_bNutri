@@ -1,9 +1,13 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace
 import 'package:b_nutri/modules/galeria/galeria.dart';
 import 'package:b_nutri/modules/home/optionmenu.dart';
+import 'package:b_nutri/modules/list/card_list.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
 import 'package:b_nutri/modules/receitas/receitas.dart';
 import 'package:flutter/material.dart';
+
+import '../listas/leiteList.dart';
+import '../listas/passosList.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -61,21 +65,27 @@ class _HomePageState extends State<HomePage> {
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
                 children: <Widget>[
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => ListPage()));
+                  Option(
+                    nomeOption: "opção 1 ",
+                    imgOption: ('assets/imgs/earth.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  ListPage(listcard: passoslist, titulo:'12 passos')));
                     },
-                    child: Option(
-                      nomeOption: "opção 1 ",
-                      imgOption: ('assets/imgs/earth.png'),
-                      press: () {},
-                    ),
                   ),
                   Option(
                     nomeOption: "opção 2 ",
                     imgOption: ('assets/imgs/baby.jpg'),
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  ListPage(listcard: leitelist, titulo:'Leite')));
+                    },
                   ),
                   Option(
                     nomeOption: "opção 3 ",
