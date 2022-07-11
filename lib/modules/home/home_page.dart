@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(25.0),
+              padding: const EdgeInsets.all(30.0),
               child: Container(
                 child: ListTile(
                   title: Text.rich(
