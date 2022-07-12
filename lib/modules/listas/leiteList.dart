@@ -13,5 +13,4 @@ final List<CardItem> leitelist = [
     info: "Informações sobre a extração",
     image: "assets/imgs/moon.png",
   ),
- 
 ];

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:b_nutri/modules/info/info_page.dart';
 import 'package:b_nutri/modules/wrapper.dart';
 import 'package:flutter/material.dart';
 

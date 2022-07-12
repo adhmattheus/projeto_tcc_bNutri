@@ -85,6 +85,72 @@ class _HomePageState extends State<HomePage> {
                                   listcard: leitelist, titulo: 'Leite')));
                     },
                   ),
+                  Option(
+                    nomeOption: "12 Passos",
+                    imgOption: ('assets/imgs/mars.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/neptune.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/mercury.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/earth.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/moon.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/mars.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
                 ],
               ),
             ),
