@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/moon.png'),
+                    imgOption: ('assets/imgs/baby.jpg'),
                     press: () {
                       Navigator.push(
                           context,
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "12 Passos",
-                    imgOption: ('assets/imgs/mars.png'),
+                    imgOption: ('assets/imgs/baby.jpg'),
                     press: () {
                       Navigator.push(
                           context,
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/neptune.png'),
+                    imgOption: ('assets/imgs/baby.jpg'),
                     press: () {
                       Navigator.push(
                           context,
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/earth.png'),
+                    imgOption: ('assets/imgs/baby.jpg'),
                     press: () {
                       Navigator.push(
                           context,
@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/mars.png'),
+                    imgOption: ('assets/imgs/baby.jpg'),
                     press: () {
                       Navigator.push(
                           context,
