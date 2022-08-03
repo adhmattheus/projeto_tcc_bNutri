@@ -1,5 +1,5 @@
+import 'package:b_nutri/modules/login/login_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback onTap;
@@ -11,6 +11,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -33,20 +35,7 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.all(50.0),
               child: InkWell(
-                onTap: () async {
-                  GoogleSignIn _googleSignIn = GoogleSignIn(
-                    scopes: [
-                      'email',
-                    ],
-                  );
-
-                  try {
-                    final response = await _googleSignIn.signIn();
-                    print(response);
-                  } catch (error) {
-                    print(error);
-                  }
-                },
+                onTap: controller.googleSignIn,
                 child: Container(
                   height: 56,
                   decoration: BoxDecoration(
