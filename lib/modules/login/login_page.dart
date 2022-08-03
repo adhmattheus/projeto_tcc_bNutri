@@ -1,10 +1,9 @@
 import 'package:b_nutri/modules/login/login_controller.dart';
+import 'package:b_nutri/modules/login/social_login.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  final VoidCallback onTap;
-
-  const LoginPage({Key? key, required this.onTap}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -12,11 +11,9 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final controller = LoginController();
-
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -34,45 +31,10 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Padding(
               padding: const EdgeInsets.all(50.0),
-              child: InkWell(
-                onTap: controller.googleSignIn,
-                child: Container(
-                  height: 56,
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(213, 250, 250, 250),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        flex: 1,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset('assets/imgs/google.png'),
-                            SizedBox(width: 10),
-                            Container(
-                              height: 56,
-                              width: 1,
-                              color: Color.fromARGB(118, 158, 158, 158),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Expanded(
-                        flex: 4,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Entrar com Google",
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+              child: SocialLoginButton(
+                onTap: () {
+                  controller.googleSignIn(context);
+                },
               ),
             )
           ],
