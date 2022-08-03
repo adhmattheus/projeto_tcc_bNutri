@@ -1,6 +1,7 @@
 import 'package:b_nutri/modules/galeria/galeria.dart';
 import 'package:b_nutri/modules/home/home_page.dart';
 import 'package:b_nutri/modules/receitas/receitas.dart';
+import 'package:b_nutri/shared/models/user_model.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -12,11 +13,6 @@ class Wrapper extends StatefulWidget {
 
 class _WrapperState extends State<Wrapper> {
   int _currentIndex = 1;
-  final List<Widget> _children = [
-    Receitas(),
-    HomePage(),
-    Galeria(),
-  ];
 
   void onTabTapped(int index) {
     setState(() {
@@ -26,6 +22,14 @@ class _WrapperState extends State<Wrapper> {
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> _children = [
+      Receitas(),
+      HomePage(
+        user: ModalRoute.of(context)!.settings.arguments as UserModel,
+      ),
+      Galeria(),
+    ];
+
     return Scaffold(
       body: _children[_currentIndex],
       extendBody: true,
@@ -39,7 +43,6 @@ class _WrapperState extends State<Wrapper> {
           Icon(Icons.home),
           Icon(Icons.photo_library),
         ],
-       
       ),
     );
   }

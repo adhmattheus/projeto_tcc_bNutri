@@ -2,12 +2,15 @@
 
 import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
+import 'package:b_nutri/shared/models/user_model.dart';
 import 'package:flutter/material.dart';
 import '../listas/leiteList.dart';
 import '../listas/passosList.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  final UserModel user;
+
+  const HomePage({Key? key, required this.user}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -33,9 +36,9 @@ class _HomePageState extends State<HomePage> {
                 child: ListTile(
                   title: Text.rich(
                     TextSpan(
-                      text: "Olá, ",
+                      text: "Olá, mamãe ",
                       children: [
-                        TextSpan(text: " mamãe Maria"),
+                        TextSpan(text: "${widget.user.name}"),
                       ],
                     ),
                   ),
@@ -46,10 +49,11 @@ class _HomePageState extends State<HomePage> {
                     height: 48,
                     width: 48,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assets/imgs/baby.jpg'),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.circular(30)),
+                      borderRadius: BorderRadius.circular(30),
+                      image: DecorationImage(
+                          image: NetworkImage(widget.user.photoURL!),
+                          fit: BoxFit.cover),
+                    ),
                   ),
                 ),
               ),
