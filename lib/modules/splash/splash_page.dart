@@ -1,3 +1,4 @@
+import 'package:b_nutri/shared/auth/auth_controller.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -5,6 +6,9 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authController = AuthController();
+    authController.currentUser(context);
+
     return Scaffold(
       body: Container(
         width: double.infinity,
