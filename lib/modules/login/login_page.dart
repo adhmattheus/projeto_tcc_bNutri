@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback onTap;
@@ -32,6 +33,20 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.all(50.0),
               child: InkWell(
+                onTap: () async {
+                  GoogleSignIn _googleSignIn = GoogleSignIn(
+                    scopes: [
+                      'email',
+                    ],
+                  );
+
+                  try {
+                    final response = await _googleSignIn.signIn();
+                    print(response);
+                  } catch (error) {
+                    print(error);
+                  }
+                },
                 child: Container(
                   height: 56,
                   decoration: BoxDecoration(
