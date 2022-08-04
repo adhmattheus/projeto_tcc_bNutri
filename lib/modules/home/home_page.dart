@@ -122,39 +122,6 @@ class _HomePageState extends State<HomePage> {
                                   listcard: leitelist, titulo: 'Leite')));
                     },
                   ),
-                  Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/baby.jpg'),
-                    press: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
-                    },
-                  ),
-                  Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/moon.png'),
-                    press: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
-                    },
-                  ),
-                  Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/baby.jpg'),
-                    press: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
-                    },
-                  ),
                 ],
               ),
             ),

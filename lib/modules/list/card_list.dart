@@ -10,5 +10,3 @@ class CardItem {
       required this.info,
       required this.image});
 }
-
-

@@ -1,8 +1,11 @@
+import 'package:b_nutri/modules/list/detals_list/info_list.dart';
 import 'package:flutter/material.dart';
 
 class InfoPage extends StatefulWidget {
+  // final Info info;
   const InfoPage({
     Key? key,
+    // required this.info,
   }) : super(key: key);
 
   @override
@@ -21,58 +24,57 @@ class _InfoPageState extends State<InfoPage> {
         title: RichText(
           textAlign: TextAlign.center,
           text: TextSpan(
-            text: 'Passo1',
+            // text: info.titulo,
             style: TextStyle(fontSize: 20),
           ),
         ),
         leading: BackButton(),
       ),
       body: Container(
-          padding: EdgeInsets.only(top: 80),
-          width: double.infinity,
-          height: double.infinity,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
-          ),
-          child: Column(
-            children: [
-              Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('assets/imgs/mars.png'),
-                      fit: BoxFit.cover),
-                ),
-                height: 100.0,
-                width: 100.0,
-              ),
-              Container(
-                padding: new EdgeInsets.symmetric(vertical: 25.0),
-                child: Column(
-                  children: [
-                    Container(
-                      height: 2.0,
-                      width: 30.0,
-                      color: Color.fromARGB(255, 255, 0, 255),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(25),
+        padding: EdgeInsets.only(top: 80),
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
+        ),
+        child: Column(
+          children: [
+            // Container(
+            //   decoration: const BoxDecoration(
+            //     image: DecorationImage(
+            //         image: AssetImage(info.image), fit: BoxFit.cover),
+            //   ),
+            //   height: 100.0,
+            //   width: 100.0,
+            // ),
+            Container(
+              padding: new EdgeInsets.symmetric(vertical: 25.0),
+              child: Column(
+                children: [
+                  Container(
+                    height: 2.0,
+                    width: 30.0,
+                    color: Color.fromARGB(255, 255, 0, 255),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(25),
 
-                      padding: new EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 20),
-                      child: Text(
-                          'A prática cotidiana prova que o novo modelo estrutural aqui preconizado assume importantes posições no estabelecimento do levantamento das variáveis envolvidas,A prática cotidiana prova que o novo modelo estrutural aqui preconizado assume importantes posições no estabelecimento do levantamento das variáveis envolvidas.'),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(40, 255, 255, 255),
-                      ), // radius of 10
-                    ),
-                    // green as background color
-                  ],
-                ),
-              )
-            ],
-          )),
+                    padding: new EdgeInsets.symmetric(
+                        horizontal: 32.0, vertical: 20),
+                    // child: Text(info.info),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(40, 255, 255, 255),
+                    ), // radius of 10
+                  ),
+                  // green as background color
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
