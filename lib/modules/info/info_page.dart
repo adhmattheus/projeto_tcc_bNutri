@@ -1,11 +1,12 @@
-import 'package:b_nutri/modules/list/detals_list/info_list.dart';
+import 'package:b_nutri/modules/list/card_list.dart';
 import 'package:flutter/material.dart';
 
 class InfoPage extends StatefulWidget {
-  // final Info info;
+  final CardItem card;
+
   const InfoPage({
     Key? key,
-    // required this.info,
+    required this.card,
   }) : super(key: key);
 
   @override
@@ -24,7 +25,7 @@ class _InfoPageState extends State<InfoPage> {
         title: RichText(
           textAlign: TextAlign.center,
           text: TextSpan(
-            // text: info.titulo,
+            text: widget.card.titulo,
             style: TextStyle(fontSize: 20),
           ),
         ),
@@ -40,16 +41,16 @@ class _InfoPageState extends State<InfoPage> {
         ),
         child: Column(
           children: [
-            // Container(
-            //   decoration: const BoxDecoration(
-            //     image: DecorationImage(
-            //         image: AssetImage(info.image), fit: BoxFit.cover),
-            //   ),
-            //   height: 100.0,
-            //   width: 100.0,
-            // ),
             Container(
-              padding: new EdgeInsets.symmetric(vertical: 25.0),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(widget.card.image), fit: BoxFit.cover),
+              ),
+              height: 100.0,
+              width: 100.0,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 25.0),
               child: Column(
                 children: [
                   Container(
@@ -60,9 +61,9 @@ class _InfoPageState extends State<InfoPage> {
                   Container(
                     margin: EdgeInsets.all(25),
 
-                    padding: new EdgeInsets.symmetric(
-                        horizontal: 32.0, vertical: 20),
-                    // child: Text(info.info),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 32.0, vertical: 20),
+                    child: Text(widget.card.texto),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromARGB(40, 255, 255, 255),

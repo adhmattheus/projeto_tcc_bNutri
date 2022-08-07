@@ -30,20 +30,24 @@ class ListPage extends StatelessWidget {
         leading: BackButton(),
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 80),
-        width: double.infinity,
-        height: double.infinity,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
-        ),
-        child: Expanded(
-          child: ListView.builder(
-              itemBuilder: (context, index) => CardPage(card: listcard[index]),
-              itemCount: listcard.length,
-              padding: EdgeInsets.symmetric(vertical: 16.0)),
-        ),
-      ),
+          padding: EdgeInsets.only(top: 80),
+          width: double.infinity,
+          height: double.infinity,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
+          ),
+          child: Column(
+            children: [
+              Expanded(
+                child: ListView.builder(
+                    itemBuilder: (context, index) =>
+                        CardPage(card: listcard[index]),
+                    itemCount: listcard.length,
+                    padding: EdgeInsets.symmetric(vertical: 16.0)),
+              ),
+            ],
+          )),
     );
   }
 }

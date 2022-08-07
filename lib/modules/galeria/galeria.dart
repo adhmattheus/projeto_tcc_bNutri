@@ -74,20 +74,23 @@ class _GaleriaState extends State<Galeria> {
               image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
         ),
         child: SafeArea(
-          child: Expanded(
-            child: Container(
-              child: VerticalCardPager(
-                textStyle:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                titles: titles,
-                images: images,
-                onPageChanged: (page) {},
-                align: ALIGN.CENTER,
-                onSelectedItem: (index) {},
+            child: Column(
+          children: [
+            Expanded(
+              child: Container(
+                child: VerticalCardPager(
+                  textStyle: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                  titles: titles,
+                  images: images,
+                  onPageChanged: (page) {},
+                  align: ALIGN.CENTER,
+                  onSelectedItem: (index) {},
+                ),
               ),
             ),
-          ),
-        ),
+          ],
+        )),
       ),
     );
   }

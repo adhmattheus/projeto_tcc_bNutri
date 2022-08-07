@@ -1,25 +1,25 @@
 import 'package:b_nutri/modules/list/card_list.dart';
 
-final List<CardItem> leitelist = [
+final List<CardItem> receitas = [
   const CardItem(
     id: "1",
-    titulo: "Armazenar",
+    titulo: "Café da manha",
     info: "Informações sobre o armazenamento",
     image: "assets/imgs/mars.png",
-    texto: " Info como armazenar leite ",
+    texto: " o que comer na manha ",
   ),
   const CardItem(
     id: "2",
-    titulo: "Extração",
+    titulo: "Lanche",
     info: "Informações sobre a extração",
     image: "assets/imgs/moon.png",
-    texto: " Info como extrair leite ",
+    texto: " o que comer na tarde ",
   ),
   const CardItem(
     id: "3",
-    titulo: "Orientação",
+    titulo: "Jantar",
     info: "Informações sobre a extração",
     image: "assets/imgs/moon.png",
-    texto: " Info como orientar o leite ",
+    texto: " o que comer na noite ",
   ),
 ];
