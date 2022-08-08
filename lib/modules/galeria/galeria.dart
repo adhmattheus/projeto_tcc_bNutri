@@ -17,6 +17,8 @@ class _GaleriaState extends State<Galeria> {
     "CYAN",
     "BLUE",
     "GREY",
+    "GREY",
+    "GREY",
   ];
 
   @override
@@ -25,31 +27,43 @@ class _GaleriaState extends State<Galeria> {
       Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/mars.png'),),
+              image: AssetImage('assets/imgs/12.png'),),
         ),
       ),
       Container(
         decoration: BoxDecoration(
-          color: Colors.yellow,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/a.png'),),
         ),
       ),
       Container(
         decoration: BoxDecoration(
-          color: Colors.cyan,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+         image: DecorationImage(
+              image: AssetImage('assets/imgs/l.png'),),
         ),
       ),
       Container(
         decoration: BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/p.png'),),
         ),
       ),
       Container(
         decoration: BoxDecoration(
-          color: Colors.grey,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/u.png'),),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/v.png'),),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/q.png'),),
         ),
       ),
     ];
@@ -82,7 +96,7 @@ class _GaleriaState extends State<Galeria> {
               child: Container(
                 child: VerticalCardPager(
                   textStyle: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                      color: Color.fromARGB(0, 255, 255, 255), fontWeight: FontWeight.bold),
                   titles: titles,
                   images: images,
                   onPageChanged: (page) {},

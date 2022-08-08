@@ -27,7 +27,7 @@ class _WrapperState extends State<Wrapper> {
   Widget build(BuildContext context) {
     final List<Widget> _children = [
       Receitas(
-        titulo: "Receitas",
+        titulo: "Receitas para crianças não amamentadas",
         listcard: receitas,
       ),
       HomePage(

@@ -25,7 +25,7 @@ final List<CardItem> vegetarianalist = [
   ),
   const CardItem(
     id: "4",
-    titulo: "Ovovegetarianos:",
+    titulo: "Ovovegetarianos",
     info: "",
     image: "assets/imgs/moon.png",
     texto: "Utilizam ovos na sua alimentação.",
@@ -44,5 +44,13 @@ final List<CardItem> vegetarianalist = [
     image: "assets/imgs/moon.png",
     texto:
         " Não utilizam nenhum produto de origem animal na sua alimentação ou qualquer produto que gere exploração e/ou sofrimento animal. ",
+  ),
+  const CardItem(
+    id: "5",
+    titulo: "Cuidado especial com a criança vegetariana",
+    info: "",
+    image: "assets/imgs/moon.png",
+    texto:
+        " É fundamental que a criança vegetariana, como qualquer outra criança, seja acompanhada por profissionais de saúde que monitorem seu crescimento e desenvolvimento, orientem sobre sua alimentação e sobre a suplementação com vitaminas e minerais. Nesse caso, atenção especial deve ser dada à vitamina B12, principalmente no caso de vegetarianos estritos e veganos, uma vez que essa vitamina não está presente nos alimentos de origem vegetal.",
   ),
 ];

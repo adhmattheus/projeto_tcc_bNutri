@@ -132,17 +132,6 @@ class _HomePageState extends State<HomePage> {
                     },
                   ),
                   Option(
-                    nomeOption: "Utensílios",
-                    imgOption: ('assets/imgs/u.png'),
-                    press: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Utensílios')));
-                    },
-                  ),
-                  Option(
                     nomeOption: "Perguntas",
                     imgOption: ('assets/imgs/q.png'),
                     press: () {
