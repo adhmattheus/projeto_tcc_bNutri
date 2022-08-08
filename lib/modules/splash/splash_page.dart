@@ -21,7 +21,7 @@ class SplashPage extends StatelessWidget {
         child: Stack(
           children: [
             Center(
-              child: Image.asset('assets/imgs/baby.jpg'),
+              child: Image.asset('assets/imgs/babypicture.png'),
             ),
           ],
         ),

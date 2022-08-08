@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Option(
                     nomeOption: 'Princípios',
-                    imgOption: ('assets/imgs/earth.png'),
+                    imgOption: ('assets/imgs/babypicture.png'),
                     press: () {
                       Navigator.push(
                         context,
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/baby.jpg'),
+                    imgOption: ('assets/imgs/babypicture.png'),
                     press: () {
                       Navigator.push(
                           context,
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "12 Passos",
-                    imgOption: ('assets/imgs/baby.jpg'),
+                    imgOption: ('assets/imgs/babypicture.png'),
                     press: () {
                       Navigator.push(
                           context,
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/baby.jpg'),
+                    imgOption: ('assets/imgs/babypicture.png'),
                     press: () {
                       Navigator.push(
                           context,
@@ -113,7 +113,40 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/mercury.png'),
+                    imgOption: ('assets/imgs/babypicture.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/babypicture.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/babypicture.png'),
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ListPage(
+                                  listcard: leitelist, titulo: 'Leite')));
+                    },
+                  ),
+                  Option(
+                    nomeOption: "Leite Materno",
+                    imgOption: ('assets/imgs/babypicture.png'),
                     press: () {
                       Navigator.push(
                           context,
