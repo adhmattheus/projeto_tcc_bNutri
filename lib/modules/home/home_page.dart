@@ -2,7 +2,9 @@
 
 import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
+import 'package:b_nutri/modules/listas/alimentosList.dart';
 import 'package:b_nutri/modules/listas/principios.dart';
+import 'package:b_nutri/modules/listas/vegetarianaslist.dart';
 import 'package:b_nutri/shared/models/user_model.dart';
 import 'package:flutter/material.dart';
 import '../listas/leiteList.dart';
@@ -113,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist,
+                                  listcard: alimentolist,
                                   titulo: 'Conhecendo os Alimentos')));
                     },
                   ),
@@ -125,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist,
+                                  listcard: vegetarianalist,
                                   titulo: 'Crianças Vegetarianas')));
                     },
                   ),
