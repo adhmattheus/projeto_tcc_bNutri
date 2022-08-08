@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:b_nutri/shared/auth/auth_controller.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +8,7 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     final authController = AuthController();
     authController.currentUser(context);
 
@@ -21,7 +24,8 @@ class SplashPage extends StatelessWidget {
         child: Stack(
           children: [
             Center(
-              child: Image.asset('assets/imgs/babypicture.png'),
+              child: Image.asset('assets/imgs/babypicture.png',
+                  height: size.height * 0.3),
             ),
           ],
         ),

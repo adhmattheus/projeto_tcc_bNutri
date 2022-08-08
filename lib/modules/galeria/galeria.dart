@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:vertical_card_pager/vertical_card_pager.dart';
 
@@ -21,9 +23,9 @@ class _GaleriaState extends State<Galeria> {
   Widget build(BuildContext context) {
     final List<Widget> images = [
       Container(
-        decoration: BoxDecoration(
-          color: Colors.red,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/imgs/mars.png'),),
         ),
       ),
       Container(

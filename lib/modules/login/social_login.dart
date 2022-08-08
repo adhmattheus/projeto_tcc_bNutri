@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class SocialLoginButton extends StatelessWidget {
@@ -35,6 +37,7 @@ class SocialLoginButton extends StatelessWidget {
               flex: 4,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   Text(
                     "Entrar com Google",

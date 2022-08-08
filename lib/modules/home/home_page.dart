@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: unnecessary_const, prefer_const_constructors, sized_box_for_whitespace, avoid_unnecessary_containers, unnecessary_string_interpolations
 
 import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:b_nutri/modules/list/list_page.dart';

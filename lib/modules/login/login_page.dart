@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable, avoid_unnecessary_containers
+
 import 'package:b_nutri/modules/login/login_controller.dart';
 import 'package:b_nutri/modules/login/social_login.dart';
 import 'package:flutter/material.dart';
@@ -26,8 +28,8 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-              child: Image.asset('assets/imgs/mars.png',
-                  height: size.height * 0.3),
+              child: Image.asset('assets/imgs/babypicture.png',
+                  ),
             ),
             Padding(
               padding: const EdgeInsets.all(50.0),

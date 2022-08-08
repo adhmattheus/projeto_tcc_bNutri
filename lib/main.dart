@@ -1,7 +1,4 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
-import 'package:b_nutri/modules/info/info_page.dart';
-import 'package:b_nutri/modules/splash/splash_page.dart';
-import 'package:b_nutri/modules/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'app_widget.dart';
