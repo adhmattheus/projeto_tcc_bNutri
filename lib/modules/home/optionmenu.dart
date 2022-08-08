@@ -23,7 +23,7 @@ class Option extends StatelessWidget {
         child: Material(
           color: Colors.transparent,
           child: Padding(
-            padding: const EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(18.0),
             child: Column(
               children: <Widget>[
                 Spacer(),

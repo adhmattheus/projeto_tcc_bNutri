@@ -2,6 +2,7 @@
 
 import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
+import 'package:b_nutri/modules/listas/principios.dart';
 import 'package:b_nutri/shared/models/user_model.dart';
 import 'package:flutter/material.dart';
 import '../listas/leiteList.dart';
@@ -68,91 +69,86 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Option(
                     nomeOption: 'Princípios',
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    imgOption: ('assets/imgs/p.png'),
                     press: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => ListPage(
-                                listcard: passoslist, titulo: 'Princípios')),
+                                listcard: principioslist,
+                                titulo: 'Princípios da alimentação saudável')),
                       );
                     },
                   ),
                   Option(
                     nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    imgOption: ('assets/imgs/l.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
+                                  listcard: leitelist,
+                                  titulo: 'Leite Materno')));
                     },
                   ),
                   Option(
                     nomeOption: "12 Passos",
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    imgOption: ('assets/imgs/12.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
+                                  listcard: passoslist,
+                                  titulo:
+                                      '12 passos para alimentação saudável')));
                     },
                   ),
                   Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    nomeOption: "Alimentos",
+                    imgOption: ('assets/imgs/a.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
+                                  listcard: leitelist,
+                                  titulo: 'Conhecendo os Alimentos')));
                     },
                   ),
                   Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    nomeOption: "Vegetarianas",
+                    imgOption: ('assets/imgs/v.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
+                                  listcard: leitelist,
+                                  titulo: 'Crianças Vegetarianas')));
                     },
                   ),
                   Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    nomeOption: "Utensílios",
+                    imgOption: ('assets/imgs/u.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
+                                  listcard: leitelist, titulo: 'Utensílios')));
                     },
                   ),
                   Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/babypicture.png'),
+                    nomeOption: "Perguntas",
+                    imgOption: ('assets/imgs/q.png'),
                     press: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
-                    },
-                  ),
-                  Option(
-                    nomeOption: "Leite Materno",
-                    imgOption: ('assets/imgs/babypicture.png'),
-                    press: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Leite')));
+                                  listcard: leitelist, titulo: 'Utensílios')));
                     },
                   ),
                 ],
