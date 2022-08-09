@@ -35,7 +35,7 @@ class ListPage extends StatelessWidget {
           height: double.infinity,
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
+                image: AssetImage('assets/imgs/list.png'), fit: BoxFit.cover),
           ),
           child: Column(
             children: [

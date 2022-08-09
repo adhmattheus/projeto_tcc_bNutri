@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
         height: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
+              image: AssetImage('assets/imgs/login.png'), fit: BoxFit.cover),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

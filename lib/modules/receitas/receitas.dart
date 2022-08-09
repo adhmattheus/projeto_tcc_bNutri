@@ -34,7 +34,7 @@ class Receitas extends StatelessWidget {
         height: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
+              image: AssetImage('assets/imgs/extra.png'), fit: BoxFit.cover),
         ),
         child: Column(
           children: [

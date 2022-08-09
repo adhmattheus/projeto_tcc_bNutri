@@ -39,7 +39,7 @@ class _InfoPageState extends State<InfoPage> {
         height: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/home.png'), fit: BoxFit.cover),
+              image: AssetImage('assets/imgs/info.png'), fit: BoxFit.cover),
         ),
         child: Column(
           children: [
@@ -65,7 +65,10 @@ class _InfoPageState extends State<InfoPage> {
 
                     padding:
                         EdgeInsets.symmetric(horizontal: 32.0, vertical: 20),
-                    child: Text(widget.card.texto),
+                    child: Text(
+                      widget.card.texto,
+                      style: TextStyle(color: Colors.white),
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromARGB(40, 255, 255, 255),
