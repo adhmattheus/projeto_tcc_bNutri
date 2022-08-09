@@ -27,43 +27,176 @@ class _GaleriaState extends State<Galeria> {
       Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/12.png'),),
+            image: AssetImage('assets/imgs/12.png'),
+          ),
         ),
       ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/a.png'),),
-        ),
-      ),
-      Container(
-        decoration: BoxDecoration(
-         image: DecorationImage(
-              image: AssetImage('assets/imgs/l.png'),),
+            image: AssetImage('assets/imgs/a.png'),
+          ),
         ),
       ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/p.png'),),
+            image: AssetImage('assets/imgs/l.png'),
+          ),
         ),
       ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/u.png'),),
+            image: AssetImage('assets/imgs/p.png'),
+          ),
         ),
       ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/v.png'),),
+            image: AssetImage('assets/imgs/u.png'),
+          ),
         ),
       ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/imgs/q.png'),),
+            image: AssetImage('assets/imgs/v.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/q.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a1.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a2.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a3.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a4.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a5.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a7.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a6.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a8.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a9.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/a10.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/l1.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/l2.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/v1.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/v2.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/v4.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/v5.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/v6.png'),
+          ),
+        ),
+      ),
+      Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/imgs/v7.png'),
+          ),
         ),
       ),
     ];
@@ -96,7 +229,8 @@ class _GaleriaState extends State<Galeria> {
               child: Container(
                 child: VerticalCardPager(
                   textStyle: TextStyle(
-                      color: Color.fromARGB(0, 255, 255, 255), fontWeight: FontWeight.bold),
+                      color: Color.fromARGB(0, 255, 255, 255),
+                      fontWeight: FontWeight.bold),
                   titles: titles,
                   images: images,
                   onPageChanged: (page) {},

@@ -3,6 +3,7 @@
 import 'package:b_nutri/modules/home/optionmenu.dart';
 import 'package:b_nutri/modules/list/list_page.dart';
 import 'package:b_nutri/modules/listas/alimentosList.dart';
+import 'package:b_nutri/modules/listas/perguntaslista.dart';
 import 'package:b_nutri/modules/listas/principios.dart';
 import 'package:b_nutri/modules/listas/vegetarianaslist.dart';
 import 'package:b_nutri/shared/models/user_model.dart';
@@ -139,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => ListPage(
-                                  listcard: leitelist, titulo: 'Utensílios')));
+                                  listcard: perguntas, titulo: 'Perguntas Frequentes')));
                     },
                   ),
                 ],
