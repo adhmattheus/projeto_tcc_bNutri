@@ -1,7 +1,6 @@
 # b_nutri
 
-A new Flutter projec
-.
+A new Flutter project finished.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
